@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: SubscriptionScreen_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 39737db2196a9384f87de363f2e609bd, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 246430536622080
+    m_Localized: Jump, Move, Smile!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249419443789824
+    m_Localized: Because a Happy Heart Beats Stronger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249988862500864
+    m_Localized: Building Bonds and Muscles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250009330704384
+    m_Localized: Where Friends and Fitness Thrive!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250023394205696
+    m_Localized: Molding Little Champions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250048627138560
+    m_Localized: BannerKey_5 text placeholder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250128688013312
+    m_Localized: BannerKey_6 text placeholder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 255975275159552
+    m_Localized: Our
+    m_Metadata:
+      m_Items: []
+  - m_Id: 256062722203648
+    m_Localized: and
+    m_Metadata:
+      m_Items: []
+  - m_Id: 256123787075584
+    m_Localized: Terms & Conditions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 256190258405376
+    m_Localized: Privacy Policy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 256255018459136
+    m_Localized: 3 Months
+    m_Metadata:
+      m_Items: []
+  - m_Id: 256336190824448
+    m_Localized: Year
+    m_Metadata:
+      m_Items: []
+  - m_Id: 256418499846144
+    m_Localized: '{0} {1} per month'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 256670892089344
+    m_Localized: 600 sport exercises
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257165085958144
+    m_Localized: Parental control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257239174144000
+    m_Localized: 6 training programs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257380505411584
+    m_Localized: Works without internet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257423190843392
+    m_Localized: 'Start 3 days free
+
+      Trial now'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257483177779200
+    m_Localized: <size=42>40%</size> SALE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257588744216576
+    m_Localized: <u>Skip</u>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257629038895104
+    m_Localized: Best Value!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257718293684224
+    m_Localized: Restore Purchases
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257759766962176
+    m_Localized: Buy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257775403327488
+    m_Localized: 'Free Trial
+
+      <size=70>{0}</size>
+
+      days left'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

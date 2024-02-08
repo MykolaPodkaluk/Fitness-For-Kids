@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 81c06c9f3d6979346b7494f5f0869863
+  m_SerializeEntries:
+  - m_GUID: cffc03a506e79634a8ee88b2061f7ff9
+    m_Address: Assets/Prefabs/UI/Subscription Screen/SubscriptionScreen.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a7067367ae037f40b622c3c449a23f6
+    m_Address: Assets/Prefabs/UI/Profile Registration Screen/Profile Registration
+      Screen.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c318c88bdceb35f4bb4e24e38dd8ee62
+    m_Address: Assets/Prefabs/UI/Program Screen/Programs Screen.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dda625919fb9724459d900e63b809ad7
+    m_Address: Assets/Data/Training Program View Styles/Blue Panel View StyleData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a2a33e8434d14b4cb2817efa6b5c3ad
+    m_Address: Assets/Images/Programs Screen/Program Buttons/Buttons/Program button
+      base blue.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 139dd5636a06978489883f9b77bf34d2
+    m_Address: Assets/Images/Programs Screen/Program Buttons/Icons/Program icon placeholder
+      01.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 44a35d8a196953e418eb3437def06057
+    m_Address: Assets/Images/UI Elements/Panels/Panel Base/Panel base blue.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 00b22d8de58b0d6499cb0e66fb56839d
+    m_Address: Assets/Data/Training Program View Styles/Green Panel View StyleData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90e00fa78034de04fb73fc300ea7586b
+    m_Address: Assets/Data/Training Program View Styles/Purple Panel View StyleData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6805f9d62281da540a1033382fe06814
+    m_Address: Assets/Data/Training Program View Styles/Red Panel View StyleData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a097e6983ce69284daf6c7993959dd09
+    m_Address: Assets/Data/Training Program View Styles/Violet Panel View StyleData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e64ef45127f6cd4d9f47d5cdcd6c2ca
+    m_Address: Assets/Data/Training Program View Styles/Yellow Panel View StyleData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ea942cce9d59c1429cd2a4b67861e2d
+    m_Address: Assets/Data/Training Program View Styles/Grey Panel View StyleData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 01d636bc6b7a2794ebdb7eb53d3832f5
+    m_Address: Assets/Images/Programs Screen/Program Buttons/Buttons/Program button
+      base green.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 677e8457eb5fb1948b54eb950db47af2
+    m_Address: Assets/Images/UI Elements/Panels/Panel Base/Panel base green.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a0ae8dfb3c12474aba27ace2feca99a
+    m_Address: Assets/Images/Programs Screen/Program Buttons/Buttons/Program button
+      base yellow.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 714058d5a2ab1ae408878f3c7e510dc1
+    m_Address: Assets/Images/UI Elements/Panels/Panel Base/Panel base yellow.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d093300cd5f03a848a30519a27c7b0da
+    m_Address: Assets/Images/Programs Screen/Program Buttons/Buttons/Program button
+      base violet.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: efff8aa2b7fc1b8449590b96a706f6ac
+    m_Address: Assets/Images/UI Elements/Panels/Panel Base/Panel base violet.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 340700f7fd792864a8fd6aff271c86a8
+    m_Address: Assets/Images/Programs Screen/Program Buttons/Buttons/Program button
+      base red.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b133642f61b41bf438aff58ae5470c9d
+    m_Address: Assets/Images/UI Elements/Panels/Panel Base/Panel base red.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 21f733a5ad30c924b9ef541bf38a2cad
+    m_Address: Assets/Images/Programs Screen/Program Buttons/Buttons/Program button
+      base purple.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 35c03b7e04c30b7429dacbaf0baa4054
+    m_Address: Assets/Images/UI Elements/Panels/Panel Base/Panel base purple.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0306deb089a2fea49986a2accd30d932
+    m_Address: Assets/Images/Programs Screen/Program Buttons/Buttons/Program button
+      base gray.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0dd32edbfe5dcd74993068d21b3035e4
+    m_Address: Assets/Images/UI Elements/Panels/Panel Base/Panel base grey.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac2507c5ca064d84fb3aa81837aeaf6c
+    m_Address: Assets/Data/Training Program View Styles/Color Styles/Blue TrainingProgram
+      ColorStyleData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 73db6bb92e43ee044b0056dd03f6c4a9
+    m_Address: Assets/Data/Training Program View Styles/Color Styles/Green TrainingProgram
+      ColorStyleData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c423b86f5e3a78245b5ca0a554d133c0
+    m_Address: Assets/Data/Training Program View Styles/Color Styles/Grey TrainingProgram
+      ColorStyleData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cfa3927cd9adb2c40bbdaf741cdc3c33
+    m_Address: Assets/Data/Training Program View Styles/Color Styles/Purple TrainingProgram
+      ColorStyleData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3459c08d14792e94c898dc5dcae908fb
+    m_Address: Assets/Data/Training Program View Styles/Color Styles/Red TrainingProgram
+      ColorStyleData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5bcc32a9f1a4536449f5a83c195db7b0
+    m_Address: Assets/Data/Training Program View Styles/Color Styles/Yellow TrainingProgram
+      ColorStyleData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0362199d5109d6c419e0d8d503b9d5c4
+    m_Address: Assets/Data/Training Program View Styles/Color Styles/Violet TrainingProgram
+      ColorStyleData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84422d0024afba24094bf35c56d968f2
+    m_Address: Assets/Data/Training Program Localization Keys/WarmUp LocalizationData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0ce0f5b7b3a8d19498930192e24ca444
+    m_Address: Assets/Data/Training Program Localization Keys/NoEquipment LocalizationData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 96ab3ab01cc461f44b45437bda863ebf
+    m_Address: Assets/Data/Training Program Localization Keys/MorningExercises LocalizationData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da198be824af4f049a40b4bd11e1e8ab
+    m_Address: Assets/Data/Training Program Localization Keys/HealthyBack LocalizationData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fee72a585b30d594094d83ce53b11cac
+    m_Address: Assets/Data/Training Program Localization Keys/FullBody LocalizationData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ae50e998490ea64a81b7f7f702a884a
+    m_Address: Assets/Data/Training Program Localization Keys/FitnessStrong LocalizationData.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 92d4e591155eef949a11e00b9394bf66
+    m_Address: Assets/Prefabs/UI/Training Programs Screen/Training Program Details
+      Screen.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b9d96e029cae81744b9e578df6c5deac
+    m_Address: Assets/Prefabs/UI/Training Screen/Exercise Preview/Exercise Preview
+      Panel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 012d5d77a4795d14b8d130f7c1cdce95
+    m_Address: Assets/3D Models/Characters/Trainer Avatars/Boy Default/Boy Default.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 768e7d8d733c41144baaf70b38608bd5
+    m_Address: Assets/3D Models/Characters/Trainer Avatars/Girl Default/Girl Default.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f385bf6c17224242a5643745ea4e639
+    m_Address: Assets/Prefabs/Avatars/Boy Default.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 287b197e439a75e4394977da8e1479ef
+    m_Address: Assets/Prefabs/Avatars/Girl Default.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c84af4152ad36446bfb03090ea3328c
+    m_Address: Assets/Prefabs/Avatars/X Bot.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 22e558d9da44f164ba2c451e988e7ec0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a99a37418059eb647a383be66577c0ab, type: 2}
+    - {fileID: 11400000, guid: e373e93f12b38154290c5652349ed7c8, type: 2}

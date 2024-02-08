@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4801619438e6ac84e8865d35901c8944, type: 3}
+  m_Name: PopupAdressableRefsHolder
+  m_EditorClassIdentifier: 
+  _popupsProvider:
+    references:
+    - <Type>k__BackingField: 2
+      <Reference>k__BackingField:
+        m_AssetGUID: cffc03a506e79634a8ee88b2061f7ff9
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 3
+      <Reference>k__BackingField:
+        m_AssetGUID: 4a7067367ae037f40b622c3c449a23f6
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 8
+      <Reference>k__BackingField:
+        m_AssetGUID: c318c88bdceb35f4bb4e24e38dd8ee62
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 9
+      <Reference>k__BackingField:
+        m_AssetGUID: 92d4e591155eef949a11e00b9394bf66
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 10
+      <Reference>k__BackingField:
+        m_AssetGUID: b9d96e029cae81744b9e578df6c5deac
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0

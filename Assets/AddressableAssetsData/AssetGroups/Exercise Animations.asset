@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Exercise Animations
+  m_EditorClassIdentifier: 
+  m_GroupName: Exercise Animations
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9eea0d525456b714e9fa472cb1e77558
+  m_SerializeEntries: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 22e558d9da44f164ba2c451e988e7ec0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: e9d729e9a8606a94c915babb2efbd232, type: 2}
+    - {fileID: 11400000, guid: f6c18ea51ad4f654fa6691bb892171e4, type: 2}

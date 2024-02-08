@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: GUI Elements_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 232ca6899dcd70848b225595a90f5f83, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 8012750848
+    m_Localized: 'Add
+
+      User'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686384447447040
+    m_Localized: Programs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686471080796160
+    m_Localized: NEW!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686731060535296
+    m_Localized: Unlock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686702501519360
+    m_Localized: More
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7686654921334784
+    m_Localized: Go!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7715368337989632
+    m_Localized: Locked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14192829867286528
+    m_Localized: View
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14211053057007616
+    m_Localized: My progress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49643785599901696
+    m_Localized: Select programs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49666990272208896
+    m_Localized: Select
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49670622237483008
+    m_Localized: Ok
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49674034077294592
+    m_Localized: All selected programs will be added to the main screen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50016186938482688
+    m_Localized: 'The program includes such exercises as:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50058591314173952
+    m_Localized: 'Time:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50058699288141824
+    m_Localized: 'Difficulty:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50058828715974656
+    m_Localized: 'Skills:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50690753981898752
+    m_Localized: Works without internet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50691058362540032
+    m_Localized: Loading...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50691531521974272
+    m_Localized: Jump, Move, Smile!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51036702482685952
+    m_Localized: Chose a language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51036910641799168
+    m_Localized: Ukrainian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51036835685392384
+    m_Localized: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53257650413821952
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53257740503277568
+    m_Localized: Statistics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53258530525601792
+    m_Localized: 'My activity:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53273477544468480
+    m_Localized: 'Let''s start in:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53348555258912768
+    m_Localized: Front
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53348579317440512
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

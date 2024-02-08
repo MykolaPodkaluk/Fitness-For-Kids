@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-Ukrainian (uk)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-String-Tables-Ukrainian (uk)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8a4227a4d8442b0408129baadcda3769
+  m_SerializeEntries:
+  - m_GUID: ada6aeb8339f7224a816a5a8257e4349
+    m_Address: Player Registration_uk
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-uk
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf97b8c16d967a14e9fa0411b75423ad
+    m_Address: GUI Elements_uk
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-uk
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c3224c240d364549a1f5fd13ebaebc6
+    m_Address: Sports Programs_uk
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-uk
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 80efdcbfe1de50148895c71eb320b976
+    m_Address: SubscriptionScreen_uk
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-uk
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6a0086e5948c3544b2f53f3c64f4524
+    m_Address: Working Bady Parts_uk
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e88e3880bf2c0e4ea68ece6f3f5d910
+    m_Address: DateTime_uk
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0dc8c604d2f93646b78d4f5d41555d2
+    m_Address: Skills_uk
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd27552a11e9ade458313f39a7eb558f
+    m_Address: Sports Exercises Names_uk
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9963c4372c384c64392dc580756018d4
+    m_Address: Sports Exercises Descriptions_uk
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 73740e6bba4aa934e907935920dca598
+    m_Address: PopupStrings_uk
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-uk
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 22e558d9da44f164ba2c451e988e7ec0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 9800218a29ef4c74cb76f1e5695841be, type: 2}
+    - {fileID: 11400000, guid: 7c51ff9d0d5a09e4eb193cf79b01b7c2, type: 2}

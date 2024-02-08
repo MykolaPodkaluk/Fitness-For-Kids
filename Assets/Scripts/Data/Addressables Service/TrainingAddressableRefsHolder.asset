@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72be39b36326bf8478139a3e74b69bc7, type: 3}
+  m_Name: TrainingAddressableRefsHolder
+  m_EditorClassIdentifier: 
+  _styles:
+    references:
+    - <Type>k__BackingField: 1
+      <Reference>k__BackingField:
+        m_AssetGUID: ac2507c5ca064d84fb3aa81837aeaf6c
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 2
+      <Reference>k__BackingField:
+        m_AssetGUID: 73db6bb92e43ee044b0056dd03f6c4a9
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 7
+      <Reference>k__BackingField:
+        m_AssetGUID: c423b86f5e3a78245b5ca0a554d133c0
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 3
+      <Reference>k__BackingField:
+        m_AssetGUID: cfa3927cd9adb2c40bbdaf741cdc3c33
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 4
+      <Reference>k__BackingField:
+        m_AssetGUID: 3459c08d14792e94c898dc5dcae908fb
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 5
+      <Reference>k__BackingField:
+        m_AssetGUID: 0362199d5109d6c419e0d8d503b9d5c4
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 6
+      <Reference>k__BackingField:
+        m_AssetGUID: 5bcc32a9f1a4536449f5a83c195db7b0
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+  _views:
+    references:
+    - <Type>k__BackingField: 1
+      <Reference>k__BackingField:
+        m_AssetGUID: a097e6983ce69284daf6c7993959dd09
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 2
+      <Reference>k__BackingField:
+        m_AssetGUID: dda625919fb9724459d900e63b809ad7
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 3
+      <Reference>k__BackingField:
+        m_AssetGUID: 00b22d8de58b0d6499cb0e66fb56839d
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 4
+      <Reference>k__BackingField:
+        m_AssetGUID: 5e64ef45127f6cd4d9f47d5cdcd6c2ca
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 5
+      <Reference>k__BackingField:
+        m_AssetGUID: 90e00fa78034de04fb73fc300ea7586b
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 6
+      <Reference>k__BackingField:
+        m_AssetGUID: 6805f9d62281da540a1033382fe06814
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+  _localizationKeys:
+    references:
+    - <Type>k__BackingField: 1
+      <Reference>k__BackingField:
+        m_AssetGUID: 84422d0024afba24094bf35c56d968f2
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 2
+      <Reference>k__BackingField:
+        m_AssetGUID: 96ab3ab01cc461f44b45437bda863ebf
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 3
+      <Reference>k__BackingField:
+        m_AssetGUID: 0ce0f5b7b3a8d19498930192e24ca444
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 4
+      <Reference>k__BackingField:
+        m_AssetGUID: da198be824af4f049a40b4bd11e1e8ab
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 5
+      <Reference>k__BackingField:
+        m_AssetGUID: fee72a585b30d594094d83ce53b11cac
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - <Type>k__BackingField: 6
+      <Reference>k__BackingField:
+        m_AssetGUID: 7ae50e998490ea64a81b7f7f702a884a
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0

@@ -1,0 +1,313 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Sports Programs_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 03ebf7bd4143c5446a516bc7e1bcfcf5, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 8327323648
+    m_Localized: Fitness Strong
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1582999068672
+    m_Localized: No Equipment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1729027956736
+    m_Localized: Full Body
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2099636658176
+    m_Localized: Warm-up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2364884443136
+    m_Localized: Healthy Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600470110208
+    m_Localized: Morning Exercises
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3130797907968
+    m_Localized: The program includes exercises with equipment and home-made weights
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3793934147584
+    m_Localized: We have developed this training program for the initial level of
+      training
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4637459013632
+    m_Localized: This training program is aimed at developing endurance, strength,
+      coordination and dexterity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5388918906880
+    m_Localized: The main purpose of this program is to warm up the muscles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6280653103104
+    m_Localized: "The program \xABHEALTH BACK\xBB is designed to form a correct posture
+      and prevent injuries"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6945769054208
+    m_Localized: Morning gymnastics gives us energy for the coming day
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269165774036992
+    m_Localized: 'Fitness Strong
+
+      (with equipment)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35777567231107072
+    m_Localized: 'Morning gymnastics gives us energy for the coming day. It should
+      be performed immediately after waking up, for a faster transition from sleep
+      to active activity. It differs from the warm-up by a more moderate intensity
+      of performance and thoroughly warms up all muscle groups.
+
+
+      All exercises
+      are aimed at flexibility and exclude any strength exercises.
+
+
+      Daily
+      performance of exercise will contribute to the hardening of the body, improve
+      the mobility of the joints and have a beneficial effect on the musculoskeletal
+      system.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35777515154628608
+    m_Localized: "The program \xABHEALTH BACK\xBB is designed to form a correct posture
+      and prevent injuries. For mobilization and mobility of all parts of the spine,
+      creation of a muscle corset.\n\nThis program tones the back muscles, which
+      allows you to eliminate pain and discomfort.\n\nWe recommend performing a set
+      of posture exercises 3-4 times a week. Perform each movement smoothly and slowly,
+      breathe to your full chest."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35777453246701568
+    m_Localized: "Start each workout with a \xABWARM-UP\xBB, the main purpose of
+      which is to warm up the muscles. Warming up will protect you from possible
+      injuries, increase body temperature, activate joint mobility, muscles will
+      become more elastic, which will help them work as efficiently as possible throughout
+      the training. You should start warming up from top to bottom, neck, shoulders,
+      arms, chest, back, core, legs.\n\nWe will gradually warm up each joint and
+      muscle at a slow pace and with a small amplitude. The intensity of the warm-up
+      should not be high, as this can lead to rapid fatigue and a decrease in the
+      effectiveness of training."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35777404659884032
+    m_Localized: "The \xABFULL BODY\xBB training program is aimed at developing endurance,
+      strength, improving coordination abilities and dexterity. Which contributes
+      to general physical development and strengthening of the muscular system.\n\nThe
+      program includes complex motor actions and is performed in a short period of
+      time, with short rest between exercises and series of high-intensity exercises."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35777336372420608
+    m_Localized: "We have developed a training program \xABWITHOUT INVENTORY\xBB
+      for the initial level of training. This program includes a set of basic exercises
+      that will contribute to the general strengthening of the musculoskeletal system
+      and muscles and will prepare your body for further intense loads.\n\nWe recommend
+      performing circular exercises for each muscle group at an arbitrary pace, with
+      rest between exercises. Pay attention to the execution technique and concentrate
+      on the work of the muscles. Learn to control your body.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35777205069733888
+    m_Localized: "The \xABFITNESS STRONG\xBB training program includes exercises
+      with equipment in the form of rubber bands, dumbbells, body bars, and any home-made
+      weights.\n\nThis program is aimed at the development of strength indicators,
+      speed, growth of muscle mass and development of willpower. We recommend performing
+      exercises for each muscle group at a slow pace, concentrating on the technique
+      of their execution."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42754309233631232
+    m_Localized: ~ 40 minutes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42754252581167104
+    m_Localized: ~ 45 minutes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42754424535048192
+    m_Localized: 20 - 30 minutes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42754516339974144
+    m_Localized: 8 - 10 minutes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42754560266919936
+    m_Localized: ~ 12 minutes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42754604827205632
+    m_Localized: ~ 5 minutes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42756866186207232
+    m_Localized: '1. Bridge
+
+      2. Squatting on a chair
+
+      3. Push-ups from
+      the knees
+
+      4. Lunge forward
+
+      5. Plank - "dog"
+
+      6. Swing your
+      leg
+
+      7. Plank
+
+      8. Bicycle
+
+      9. Twisting
+
+      10. Stretching'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42756868539211776
+    m_Localized: '1. Bridge
+
+      2. Squatting on a chair
+
+      3. Push-ups from
+      the knees
+
+      4. Lunge forward
+
+      5. Plank - "dog"
+
+      6. Swing your
+      leg
+
+      7. Plank
+
+      8. Bicycle
+
+      9. Twisting
+
+      10. Stretching'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42756870451814400
+    m_Localized: '1. Bridge
+
+      2. Squatting on a chair
+
+      3. Push-ups from
+      the knees
+
+      4. Lunge forward
+
+      5. Plank - "dog"
+
+      6. Swing your
+      leg
+
+      7. Plank
+
+      8. Bicycle
+
+      9. Twisting
+
+      10. Stretching'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42756872431525888
+    m_Localized: '1. Bridge
+
+      2. Squatting on a chair
+
+      3. Push-ups from
+      the knees
+
+      4. Lunge forward
+
+      5. Plank - "dog"
+
+      6. Swing your
+      leg
+
+      7. Plank
+
+      8. Bicycle
+
+      9. Twisting
+
+      10. Stretching'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42756874507706368
+    m_Localized: '1. Bridge
+
+      2. Squatting on a chair
+
+      3. Push-ups from
+      the knees
+
+      4. Lunge forward
+
+      5. Plank - "dog"
+
+      6. Swing your
+      leg
+
+      7. Plank
+
+      8. Bicycle
+
+      9. Twisting
+
+      10. Stretching'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42756876520972288
+    m_Localized: '1. Bridge
+
+      2. Squatting on a chair
+
+      3. Push-ups from
+      the knees
+
+      4. Lunge forward
+
+      5. Plank - "dog"
+
+      6. Swing your
+      leg
+
+      7. Plank
+
+      8. Bicycle
+
+      9. Twisting
+
+      10. Stretching'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

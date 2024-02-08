@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b85cf1cd7c863946bdf9ffc7bfc2bda, type: 3}
+  m_Name: AddressableRefsHolder
+  m_EditorClassIdentifier: 
+  _popupsHolder: {fileID: 11400000, guid: ca0c3dfd5a5ccf0449c74342b4d8787f, type: 2}
+  _trainingsHolder: {fileID: 11400000, guid: c37f606ce14014c4bb6ea1b5ef4d53ab, type: 2}
+  _exercicesHolder: {fileID: 11400000, guid: 6224b2fe960ccc346987a8c79634789b, type: 2}
+  _avatarsHolder: {fileID: 11400000, guid: ead83c8e7f501cb41b7df74a0fa2149e, type: 2}
+  _allTrainingPrograms:
+  - {fileID: 11400000, guid: 92215afb91c2fc243991d00e01161730, type: 2}
+  - {fileID: 11400000, guid: 3bcf2ffd34254ce439128a147b52c43f, type: 2}
+  - {fileID: 11400000, guid: e853ebca34132f0459bdd979efd7ec87, type: 2}
+  - {fileID: 11400000, guid: 83029094412eea94e91b9e28ea778280, type: 2}
+  - {fileID: 11400000, guid: 14693fa71448cfd45b9ed2c75214eb93, type: 2}
+  - {fileID: 11400000, guid: 10bcaffbae1cb24499098fdb660213bb, type: 2}

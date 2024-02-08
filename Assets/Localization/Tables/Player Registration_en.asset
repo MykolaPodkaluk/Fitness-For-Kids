@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Player Registration_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 80e460d41fef24d48b0c4a360e46f629, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1666696404992
+    m_Localized: Enter Your Name<color="red">*</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2452109189120
+    m_Localized: Your name...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2744464760832
+    m_Localized: Enter date of birth<color="red">*</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2966389579776
+    m_Localized: <color="red">*</color> Required fields
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5651394256896
+    m_Localized: Select your Gender<color="red">*</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6173564133376
+    m_Localized: Boy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6240744300544
+    m_Localized: Girl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15559606984704
+    m_Localized: cm/kg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15646106116096
+    m_Localized: in/lb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18281475399680
+    m_Localized: 'Select a measurement system:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 598155365769216
+    m_Localized: 'Your height:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 598310445965312
+    m_Localized: 'Your weight:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 598417149059072
+    m_Localized: Enter your height...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 600598564626432
+    m_Localized: Enter your weight...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 601252649558016
+    m_Localized: kg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 601659299913728
+    m_Localized: cm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 601895699275776
+    m_Localized: lb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 602305902206976
+    m_Localized: in
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662697336692736
+    m_Localized: Tell us about you!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662701224812544
+    m_Localized: Welcome!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 663390726447104
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 663392773267456
+    m_Localized: Let's Go!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 672381653278720
+    m_Localized: 'You have registered in the application and now you can choose any
+      program and perform physical exercises!
+
+
+      Let''s start training!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 672370618064896
+    m_Localized: Hi
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
