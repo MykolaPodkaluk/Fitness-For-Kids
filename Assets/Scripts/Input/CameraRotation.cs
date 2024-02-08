@@ -17,13 +17,50 @@ public class CameraRotation : MonoBehaviour
     [SerializeField] private float _cameraSpeed = 0.1f;
     [SerializeField] private float _ySpeed = 0.1f;
 
-    [SerializeField] private int _zoomCounter;
-    [SerializeField] private int _YCounter;
+    [SerializeField] private float _changeRotation;
+
+    private int _zoomCounter;
+    private int _YCounter;
     private TouchControls _touchControls;
     private Coroutine _zoomCoroutine; 
     private Vector3 previousPosition; 
     private Vector3 previousPositionTwoTouches;
     private float tempYDistance;
+     
+    public void ChangeRotation(float x, float y)
+    { 
+        float rotationAroundYAxis = -x * 180 * _changeRotation; // camera moves horizontally
+        float rotationAroundXAxis = y * 180 * _changeRotation; // camera moves vertically
+
+        cam.transform.position = new Vector3(target.position.x, cameraStartYPosition, target.position.z);
+
+        // Застосовуємо обмеження для повороту по осі X
+        float newRotationX = Mathf.Clamp(cam.transform.rotation.eulerAngles.x + rotationAroundXAxis, minRotationX, 90);
+
+        cam.transform.rotation = Quaternion.Euler(newRotationX, cam.transform.rotation.eulerAngles.y + rotationAroundYAxis, 0);
+
+        cam.transform.Translate(new Vector3(0, 0, -distanceToTarget)); 
+    }
+
+    public void ChangeZoom(float x)
+    {
+        if (maxZoomDistance * 10 > _zoomCounter & x == 1 || _zoomCounter > minZoomDistance * 10 & x == -1)
+        {
+            cam.transform.Translate(new Vector3(0, 0, -_cameraSpeed * x));
+            distanceToTarget += _cameraSpeed * x;
+            _zoomCounter += (int)x;
+        }
+    }
+
+    public void ChangeDoubleRotation(float x)
+    {
+        if (_YCounter > minYDistance * 100 & x == -1 || _YCounter < maxYDistance * 100 & x == 1)
+        {
+            tempYDistance = _ySpeed * x;
+            cameraStartYPosition += _ySpeed * x;
+            _YCounter += (int)x;
+        }
+    }
 
     private void Start()
     {
@@ -48,16 +85,6 @@ public class CameraRotation : MonoBehaviour
         _touchControls.Disable();
     }
 
-    private void ZoomStart()
-    {
-        _zoomCoroutine = StartCoroutine(ZoomDetection());
-    }
-
-    private void ZoomEnd()
-    {
-        StopCoroutine(_zoomCoroutine);
-    }  
-
     IEnumerator ZoomDetection()
     {
         float previousDistance = 0f;
@@ -69,16 +96,12 @@ public class CameraRotation : MonoBehaviour
                 _touchControls.Touch.SecondaryFingerPosition.ReadValue<Vector2>());
             if (distance < previousDistance && _zoomCounter < maxZoomDistance * 10)
             {
-                cam.transform.Translate(new Vector3(0, 0, -_cameraSpeed));
-                distanceToTarget += _cameraSpeed;
-                _zoomCounter++;
+                ChangeZoom(1);
             }
             //zoom in
             if (distance > previousDistance && _zoomCounter > minZoomDistance * 10)
             {
-                cam.transform.Translate(new Vector3(0, 0, _cameraSpeed));
-                distanceToTarget -= _cameraSpeed;
-                _zoomCounter--;
+                ChangeZoom(-1);
             }
 
             previousDistance = distance;
@@ -155,5 +178,15 @@ public class CameraRotation : MonoBehaviour
     private Vector3 GetMedianeVector(Vector3 firstVector, Vector3 secondVector)
     {
         return new Vector3((firstVector.x + secondVector.x) / 2, (firstVector.y + secondVector.y) / 2, (firstVector.z + secondVector.z) / 2);
+    }
+
+    private void ZoomStart()
+    {
+        _zoomCoroutine = StartCoroutine(ZoomDetection());
+    }
+
+    private void ZoomEnd()
+    {
+        StopCoroutine(_zoomCoroutine);
     }
 }
