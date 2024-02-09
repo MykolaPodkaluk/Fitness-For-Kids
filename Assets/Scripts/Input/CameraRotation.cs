@@ -21,6 +21,7 @@ public class CameraRotation : MonoBehaviour
 
     private int _zoomCounter;
     private int _YCounter;
+    
     private TouchControls _touchControls;
     private Coroutine _zoomCoroutine; 
     private Vector3 previousPosition; 
@@ -65,11 +66,14 @@ public class CameraRotation : MonoBehaviour
     private void Start()
     {
         _YCounter = (int)(minYDistance * 100) + 1;
+        /*
         _touchControls.Touch.SecondaryTouchContact.started += _ => ZoomStart();
         _touchControls.Touch.SecondaryTouchContact.canceled += _ => ZoomEnd();
+        */
         _zoomCounter = (int)(distanceToTarget * 10f);
+        ChangeRotation(1, 1);
     } 
-
+/*
     private void Awake()
     {
         _touchControls = new TouchControls();
@@ -108,10 +112,10 @@ public class CameraRotation : MonoBehaviour
             yield return null;
         }
     }
-
+*/
     private void Update()
     {
-
+/*
         if (Input.GetMouseButtonDown(1))
         {
             var firstTouch = cam.ScreenToViewportPoint(Input.touches[0].position);
@@ -168,12 +172,12 @@ public class CameraRotation : MonoBehaviour
             }
             previousPositionTwoTouches = positionTwoTouches;
         }
-
+*/
         // Обмеження для положення по осі Y
         float newY = Mathf.Max(cam.transform.position.y, currentMinY) + tempYDistance;
         cam.transform.position = new Vector3(cam.transform.position.x, newY, cam.transform.position.z);
         tempYDistance = 0;
-    }
+    }/*
 
     private Vector3 GetMedianeVector(Vector3 firstVector, Vector3 secondVector)
     {
@@ -188,5 +192,5 @@ public class CameraRotation : MonoBehaviour
     private void ZoomEnd()
     {
         StopCoroutine(_zoomCoroutine);
-    }
+    }*/
 }

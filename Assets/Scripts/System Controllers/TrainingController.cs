@@ -123,14 +123,12 @@ namespace FitnessForKids.Services
         {
             await _animator.StopAnimations();
             _trainingScreenView.Hide(() => SetScreenActive(false));
-            _adsService.TryShowInterstitialAds(50);
+            _adsService.TryShowInterstitialAds(100);
         }
 
         private void UpdateNextExerciseView()
         {
-            currentExerciseIndex++;
-            Debug.Log(currentExerciseIndex);
-            Debug.Log(_currentTrainingDurations[currentExerciseIndex]);
+            currentExerciseIndex++; 
             if (currentExerciseIndex < currentProgram.Exercises.Count)
             {
                 UpdateCurrentExerciseView();
