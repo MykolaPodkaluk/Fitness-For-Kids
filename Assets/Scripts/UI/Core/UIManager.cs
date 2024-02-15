@@ -15,7 +15,7 @@ namespace FitnessForKids.Services.UI
     public interface IUIManager
     {
         void OpenView(IPopupView view, UIBehaviour viewBehaviour = UIBehaviour.StayWithNew, Action onShow = null, int manualPriopity = -1);
-        void CloseView(IPopupView view, Action onHide = null);
+        void CloseView(IPopupView view, Action onHide = null); 
     }
 
 
@@ -94,7 +94,7 @@ namespace FitnessForKids.Services.UI
                 view.Show(onShow);
             }
         }
-
+         
         public void CloseView(IPopupView view, Action onHide = null)
         {
             var selectedViewInfo = _popups.FirstOrDefault(x => x.View == view);

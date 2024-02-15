@@ -13,7 +13,7 @@ namespace FitnessForKids.Helpers
     {
         private const string csvFilePath = "Assets/Data/CSV/Exercises - Вправи.csv";
         private const string outputPath = "Assets/Data/GenerationOutput/";
-        private static readonly int[] rowsToSkip = new int[] { 0, 1, 15, 79, 88, 101, 117, 123, 224, 293, 395, 557 };
+        private static readonly int[] rowsToSkip = new int[] { 0, 1, 15, 73, 82, 93, 109, 112, 196, 260, 360, 521 };
         //private static readonly int[] rowsToSkip = new int[] { 0, 1, 11, 17 };
 
         [MenuItem("Tools/Automation/Exercise Datas from CSV")]
@@ -89,7 +89,7 @@ namespace FitnessForKids.Helpers
                 return (reps, reps);
             }
 
-            return (0, 0);
+            return (10, 10);
         }
 
         private static List<Skill> ParseSkills(string powerString, string flexibilityString, string speedString,
@@ -121,16 +121,16 @@ namespace FitnessForKids.Helpers
 
         private static ExerciseData CreateExerciseData(string[] line)
         {
-            string id = line[2];
+            string id = line[9];
             string name = line[0];
             string description = line[5];
             BodyPart bodyPart = ParseBodyPart(id);
             int minAge = ParseMinAge(line[3]);
             string workingParts = line[1];
-            Difficulty difficulty = ParseDifficulty(line[14]);
+            Difficulty difficulty = ParseDifficulty(line[21]);
             (int minReps, int maxReps) = ParseReps(line[6]);
-            bool isWarmUp = !string.IsNullOrEmpty(line[8]);
-            List<Skill> skills = ParseSkills(line[9], line[10], line[11], line[12], line[13]);
+            bool isWarmUp = !string.IsNullOrEmpty(line[15]);
+            List<Skill> skills = ParseSkills(line[16], line[17], line[18], line[19], line[20]);
 
             ExerciseData exerciseData = new ExerciseData(id, name, description, bodyPart, workingParts, difficulty, minAge, minReps, maxReps, isWarmUp, skills);
 

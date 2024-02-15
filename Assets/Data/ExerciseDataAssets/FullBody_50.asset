@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1933c978fbd53964cbf66307d5111ca2, type: 3}
+  m_Name: FullBody_50
+  m_EditorClassIdentifier: 
+  ID: FullBody_50
+  Name: 
+  Description: Wear a rubber band over your knees. Get flat, legs at the width of
+    the foot. The back is flat. The look directed forward. At the same time, bending
+    the hip joint, knee and tibia, sit down to the floor with the floor, on an imaginary
+    chair. Knees in the direction behind the socks of the feet. Hands arbitrarily.
+    In the sitting position, stepping in the way. Try not to rise above the parallel
+    with the floor. Step from the heel to the sock. Take 3 steps on the right, jump
+    to take the emphasis (from head to coccyx one line), squeeze. Skip accept the
+    position of the sitting, take 3 steps on the left. So cyclically step the right
+    and left side, alternating with push -ups.
+  BodyPart: 11
+  WorkingParts: 
+  Difficulty: 1
+  MinAge: 6
+  MinReps: 10
+  MaxReps: 10
+  IsWarmUp: 0
+  Skills: 01000000

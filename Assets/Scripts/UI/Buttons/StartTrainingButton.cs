@@ -48,7 +48,6 @@ namespace FitnessForKids.UI
         {
             _button.image.sprite = _stateSprites[0];
             _trainingService.StartSelectedTraining();
-            _button.interactable = true;
         }
 
         public void SetInteractable(bool isInteractable)

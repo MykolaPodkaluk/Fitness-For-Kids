@@ -34,6 +34,7 @@ namespace FitnessForKids.Services
         private IAnimationController _animator;
         private ITrainingProgram currentProgram;
         private int currentExerciseIndex;
+        private int currentExerciseID;
         private bool isPaused = false;
         private List<float> _currentTrainingDurations;
         [Inject] private IDataService _dataService;
@@ -64,12 +65,14 @@ namespace FitnessForKids.Services
             await UniTask.Delay(200);
             _animator.AnimationEvent.OnExerciseCompleted += UpdateNextExerciseView;
             _animator.AnimationEvent.OnProgramCompleted += CompleteTraining;
+            _animator.AnimationEvent.OnExerciseStart += UpdateTimer;
         }
 
         private void Unubscribe()
         {
             _animator.AnimationEvent.OnExerciseCompleted -= UpdateNextExerciseView;
             _animator.AnimationEvent.OnProgramCompleted -= CompleteTraining;
+            _animator.AnimationEvent.OnExerciseStart -= UpdateTimer;
         }
 
         private void CompleteTraining()
@@ -98,6 +101,7 @@ namespace FitnessForKids.Services
             currentProgram = new TrainingProgram(trainingParameters.Type, GetExercisesForProgram(trainingParameters));
 
             currentExerciseIndex = 0;
+            currentExerciseID = 0;
             var currentExercises = currentProgram.Exercises;
             List<AnimationClip> curentProgramAnimations = new List<AnimationClip>();
             List<int> curentProgramReps = new List<int>();
@@ -115,7 +119,7 @@ namespace FitnessForKids.Services
 
             GetTrainingDurations(curentProgramAnimations, curentProgramReps);
             var allAnimationsTime = GetAllTrainingDurations(curentProgramAnimations, curentProgramReps);
-            UpdateCurrentExerciseView(); 
+            UpdateCurrentExerciseView();
             await _animator.RunExerciseProgram(curentProgramAnimations, curentProgramReps, curentProgramIds, allAnimationsTime);
         } 
 
@@ -133,6 +137,12 @@ namespace FitnessForKids.Services
             {
                 UpdateCurrentExerciseView();
             }
+        }
+
+        private void UpdateTimer()
+        {
+            _trainingScreenView.UpdateTimer(_currentTrainingDurations[currentExerciseID]);
+            currentExerciseID++;
         }
 
         private void UpdateCurrentExerciseView()
@@ -185,9 +195,17 @@ namespace FitnessForKids.Services
 
             //System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
             //stopwatch.Start();
+            int breakdown = 0;
 
-            foreach (ExerciseParametersData parameters in trainingParameters.ExerciseParameters)
+            for(int i = 0; i < trainingParameters.ExerciseParameters.Count; i++)
             {
+                GetExercisesByParameter(i);
+            }
+
+            void GetExercisesByParameter(int i)
+            {
+                breakdown++;
+                ExerciseParametersData parameters = trainingParameters.ExerciseParameters[i];
                 List<ExerciseData> filteredExercises = allExercises
                     .Where(exercise =>
                         (parameters.BodyParts.Contains(exercise.BodyPart) || parameters.BodyParts.Count == 0)
@@ -200,6 +218,16 @@ namespace FitnessForKids.Services
                 {
                     int randomIndex = UnityEngine.Random.Range(0, filteredExercises.Count);
                     exercisesForProgram.Add(filteredExercises[randomIndex]);
+                    breakdown = 0;
+                }
+                else if (breakdown < 5)
+                {
+                    GetExercisesByParameter(breakdown);
+                } 
+                else
+                {
+                    Debug.Log("We dont have this animation! Breakdown is "  + breakdown.ToString());
+                    breakdown = 0;
                 }
             }
 
