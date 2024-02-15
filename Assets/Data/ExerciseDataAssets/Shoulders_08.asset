@@ -13,13 +13,9 @@ MonoBehaviour:
   m_Name: Shoulders_08
   m_EditorClassIdentifier: 
   ID: Shoulders_08
-  Name: "\u041D\u043E\u0436\u0438\u0446\u0456"
-  Description: "\u0412\u0441\u0442\u0430\u043D\u044C \u0440\u0456\u0432\u043D\u043E,
-    \u0432\u0438\u0442\u044F\u0433\u043D\u0438 \u0440\u0443\u043A\u0438 \u0432\u043F\u0435\u0440\u0435\u0434
-    \u0434\u043E\u043B\u043E\u043D\u044F\u043C\u0438 \u0434\u043E\u043D\u0438\u0437\u0443.
-    \u0412\u0438\u043A\u043E\u043D\u0443\u0439 \u0441\u0445\u0440\u0435\u0441\u043D\u0456
-    \u0440\u0443\u0445\u0438 \u0440\u0443\u043A\u0430\u043C\u0438, \u0456\u043C\u0456\u0442\u0443\u044E\u0447\u0438
-    \u0440\u0443\u0445 \u043D\u043E\u0436\u0438\u0446\u044C."
+  Name: Scissors
+  Description: Get straight, pull your hands forward with your palms down. Perform
+    cross -movements with your hands, simulating the movement of scissors.
   BodyPart: 2
   WorkingParts: "\u041F\u043B\u0435\u0447\u043E\u0432\u0438\u0439 \u0441\u0443\u0433\u043B\u043E\u0431"
   Difficulty: 0
@@ -27,4 +23,4 @@ MonoBehaviour:
   MinReps: 10
   MaxReps: 10
   IsWarmUp: 1
-  Skills: 010000000300000004000000
+  Skills: 020000000400000005000000

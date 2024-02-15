@@ -38,7 +38,7 @@ namespace FitnessForKids.UI
         public void CreatePopup(Action onComplete = null)
         {
             _uiManager.OpenView(this, viewBehaviour: UIBehaviour.StayWithNew, onShow: onComplete);
-        }
+        } 
 
         public void ClosePopup(Action callback = null)
         {

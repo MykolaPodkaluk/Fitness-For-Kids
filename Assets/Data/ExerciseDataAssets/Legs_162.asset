@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1933c978fbd53964cbf66307d5111ca2, type: 3}
+  m_Name: Legs_162
+  m_EditorClassIdentifier: 
+  ID: Legs_162
+  Name: Walking in place
+  Description: Step in place lifting your knee high, from the sock to the heel. Work
+    with your hands as when running. The back is flat, looking forward.
+  BodyPart: 10
+  WorkingParts: "\u043D\u043E\u0433\u0438"
+  Difficulty: 1
+  MinAge: 4
+  MinReps: 10
+  MaxReps: 10
+  IsWarmUp: 1
+  Skills: 

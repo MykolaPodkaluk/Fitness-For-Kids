@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1933c978fbd53964cbf66307d5111ca2, type: 3}
+  m_Name: Glutes_86 +
+  m_EditorClassIdentifier: 
+  ID: Glutes_86 +
+  Name: Strong buttocks in the knee-acidic pose (up-westoron)
+  Description: Get into the knee-acid pose (brushes under the shoulders). The back
+    is neutral, the look directed down. Pull one leg back to the toe. Exhaling, lift
+    a straight leg (due to the strength of the gluteal muscles), fix, take away the
+    ustrone, lowering with your sock to the floor. Also return to the starting position.
+    First, perform one foot, then on the other. Don't bend your back. Mach is performed
+    by the strength of the gluteal muscles. Breathing is arbitrary.
+  BodyPart: 9
+  WorkingParts: "\u0412\u0435\u043B\u0438\u043A\u0438\u0439 \u0441\u0456\u0434\u043D\u0438\u0447\u043D\u0438\u0439
+    \u043C'\u044F\u0437, \u0421\u0435\u0440\u0435\u0434\u043D\u0456\u0439 \u0441\u0456\u0434\u043D\u0438\u0447\u043D\u0438\u0439
+    \u043C'\u044F\u0437, \u041C\u0430\u043B\u0438\u0439 \u0441\u0456\u0434\u043D\u0438\u0447\u043D\u0438\u0439
+    \u043C'\u044F\u0437"
+  Difficulty: 1
+  MinAge: 6
+  MinReps: 10
+  MaxReps: 10
+  IsWarmUp: 0
+  Skills: 01000000

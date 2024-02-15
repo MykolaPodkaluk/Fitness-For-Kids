@@ -149,9 +149,9 @@ namespace FitnessForKids.UI
 
         private void RemoveProfile(int index)
         {
-            dataService.UserProfileController.RemoveProfile(index);
             CloseRemoveModalWindow();
             CloseProfilePanel();
+            dataService.UserProfileController.RemoveProfile(index);
         }
 
         public void ShowMaxProfilesMessage()

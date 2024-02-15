@@ -13,6 +13,7 @@ namespace FitnessForKids.UI
     public interface ITrainingScreenView : IView
     {
         void UpdateView(int exerciseIndex, string exerciseName, float exercisetime, BodyPart activeBodyPart, List<Skill> activeSkills);
+        void UpdateTimer(float exercisetime);
         Action OnShow { get; set; }
         GameObject GameObject { get; }
     }
@@ -53,8 +54,11 @@ namespace FitnessForKids.UI
             exerciseTitle.text = exerciseName;
             exerciseCounter.SelectIndicator(exerciseIndex);
             bodyPartsPreview.ShowActiveParts(activeBodyPart);
-            skillIndicatorPanel.UpdateIndicators(activeSkills);
+            skillIndicatorPanel.UpdateIndicators(activeSkills); 
+        }
 
+        public void UpdateTimer(float exercisetime)
+        {
             _timerPanel.StartTimer(exercisetime);
         }
 

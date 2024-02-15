@@ -13,19 +13,14 @@ MonoBehaviour:
   m_Name: Biceps_11
   m_EditorClassIdentifier: 
   ID: Biceps_11
-  Name: "\u0417\u0433\u0438\u043D\u0430\u043D\u043D\u044F, \u0440\u0443\u043A\u0438
-    \u0432\u0441\u0442\u043E\u0440\u043E\u043D\u0438 \u0434\u043E \u043F\u043B\u0435\u0447\u0435\u0439"
-  Description: "\u0412\u0441\u0442\u0430\u043D\u044C \u0440\u0456\u0432\u043D\u043E,
-    \u0440\u0443\u043A\u0438 \u0432 \u0441\u0442\u043E\u0440\u043E\u043D\u0438. \u041E\u0434\u043D\u043E\u0447\u0430\u0441\u043D\u043E
-    \u0437\u0433\u0438\u043D\u0430\u0439-\u0440\u043E\u0437\u0433\u0438\u043D\u0430\u0439
-    \u0440\u0443\u043A\u0438, \u0442\u044F\u0433\u043D\u0443\u0447\u0438\u0441\u044C
-    \u0433\u0430\u043D\u0442\u0435\u043B\u044F\u043C\u0438 \u0434\u043E \u043F\u043B\u0435\u0447\u0435\u0439."
-  BodyPart: 6
-  WorkingParts: "\u0414\u0432\u043E\u0433\u043E\u043B\u043E\u0432\u0438\u0439 \u043C'\u044F\u0437
-    \u043F\u043B\u0435\u0447\u0430"
+  Name: Flexion, arms wester to shoulders
+  Description: Get straight, arms to the sides. At the same time, bend-extend your
+    hands, stretching your shoulders.
+  BodyPart: 4
+  WorkingParts: "\u0411\u0456\u0446\u0435\u043F\u0441"
   Difficulty: 0
   MinAge: 6
-  MinReps: 12
-  MaxReps: 15
+  MinReps: 10
+  MaxReps: 10
   IsWarmUp: 0
-  Skills: 00000000
+  Skills: 01000000

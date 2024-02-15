@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1933c978fbd53964cbf66307d5111ca2, type: 3}
+  m_Name: FullBody_23
+  m_EditorClassIdentifier: 
+  ID: FullBody_23
+  Name: 
+  Description: Get flat, legs at shoulder width. Leaning, do not bend your legs.
+    Go with your hands in the emphasis lying down. brushes under the shoulders. From
+    head to coccyx one line. Jump in yourself (knees to your chest), jump to take
+    a leg apart. Come back to the starting position as well. Try to take at least
+    4 steps with your hands.
+  BodyPart: 11
+  WorkingParts: "\u041F\u0440\u044F\u043C\u0438\u0439 \u043C'\u044F\u0437 \u0436\u0438\u0432\u043E\u0442\u0430,
+    \u0412\u043D\u0443\u0442\u0440\u0456\u0448\u043D\u0456\u0439 \u043A\u043E\u0441\u0438\u0439
+    \u043C'\u044F\u0437 \u0436\u0438\u0432\u043E\u0442\u0430, \u0417\u043E\u0432\u043D\u0456\u0448\u043D\u0456\u0439
+    \u043A\u043E\u0441\u0438\u0439 \u043C'\u044F\u0437 \u0436\u0438\u0432\u043E\u0442\u0430,
+    \u0440\u0443\u043A\u0438,\u043D\u043E\u0433\u0438"
+  Difficulty: 1
+  MinAge: 6
+  MinReps: 10
+  MaxReps: 10
+  IsWarmUp: 0
+  Skills: 0100000004000000

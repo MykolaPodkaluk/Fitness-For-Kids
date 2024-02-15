@@ -33,6 +33,8 @@ public class AnimationController : MonoBehaviour, IAnimationController
     private AnimationEvent animationEvent;
     private CancellationTokenSource animationDelay;
     private List<float> currentTrainingDurations;
+    private Action playNextAnimation;
+    private Action playfirstPrewiew;
 
     AnimationEvent IAnimationController.AnimationEvent => animationEvent;
 
@@ -41,8 +43,15 @@ public class AnimationController : MonoBehaviour, IAnimationController
     [Inject] IDataService _dataService;
 
     private void Start()
-    { 
-        _exercisePreviewMediator.ON_CLOSE += UniTask.Action(PlayNextAnimation);
+    {
+    }
+
+    private async UniTaskVoid SetupPreview()
+    {
+        _exercisePreviewMediator.ON_CLOSE -= playfirstPrewiew;
+        await HandleAnimation();
+        playNextAnimation = UniTask.Action(PlayNextAnimation);
+        _exercisePreviewMediator.ON_CLOSE += playNextAnimation;
     }
 
     public async UniTask RunExerciseProgram(List<AnimationClip> exerciseAnimations, List<int> exerciseReps, List<string> exerciseIds, List<float> currentTrainingDurations)
@@ -55,7 +64,11 @@ public class AnimationController : MonoBehaviour, IAnimationController
         animationComplex = RuntimeAnimatorProvider.AnimationKeys.Take(exerciseAnimations.Count).ToList();
         animationsRepetitionCount = exerciseReps;
         _currentAnimationIndex = 0;
-        await HandleAnimation(animationComplex[_currentAnimationIndex]);
+        playfirstPrewiew = UniTask.Action(SetupPreview);
+        var currentExerciseId = _exerciseIds[_currentAnimationIndex];
+        _exercisePreviewMediator.ON_CLOSE += playfirstPrewiew;
+        _exercisePreviewMediator.ON_CLOSE += (() => animationEvent.ExerciseStart());
+        _exercisePreviewMediator.CreatePopup(currentExerciseId);
     } 
 
     private void HandleTrainingProgram()
@@ -82,7 +95,7 @@ public class AnimationController : MonoBehaviour, IAnimationController
     { 
         await UniTask.Delay(200);
         animationEvent.ExerciseComplete();
-        await HandleAnimation(animationComplex[_currentAnimationIndex]);
+        await HandleAnimation();
     }
 
     public async UniTask SetActive(bool isActive)
@@ -104,20 +117,20 @@ public class AnimationController : MonoBehaviour, IAnimationController
         //gameObject.SetActive(isActive);
     }
 
-    private async UniTask HandleAnimation(string stateID)
-    { 
+    private async UniTask HandleAnimation()
+    {
         animationDelay = new CancellationTokenSource();
         _animator.enabled = true;
-        var state = Animator.StringToHash(stateID);
+        var state = Animator.StringToHash(animationComplex[_currentAnimationIndex]);
 
         for (int i = 0; i < animationsRepetitionCount[_currentAnimationIndex]; i++)
         {
             _animator.Play(state, 0);
-            await UniTask.Delay(TimeSpan.FromSeconds(currentTrainingDurations[_currentAnimationIndex * animationsRepetitionCount[_currentAnimationIndex]]), cancellationToken: animationDelay.Token);  
-        } 
-         
+            await UniTask.Delay(TimeSpan.FromSeconds(currentTrainingDurations[_currentAnimationIndex * animationsRepetitionCount[_currentAnimationIndex]]), cancellationToken: animationDelay.Token);
+        }
+
         _currentAnimationIndex++;
-        HandleTrainingProgram(); 
+        HandleTrainingProgram();
     }
 
     public async UniTask StopAnimations()
@@ -129,6 +142,14 @@ public class AnimationController : MonoBehaviour, IAnimationController
         animationComplex = new List<string>();
         _animator.Rebind();
         _animator.enabled = false;
-        await SetActive(false);
+        await SetActive(false); 
     }
 }
+
+
+
+
+
+
+
+

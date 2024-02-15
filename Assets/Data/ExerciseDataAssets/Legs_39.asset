@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: Legs_39
   m_EditorClassIdentifier: 
   ID: Legs_39
-  Name: "\u041C\u0435\u0442\u0435\u043B\u0438\u043A"
-  Description: "\u041F\u043E\u0440\u0445\u0430\u043D\u043D\u044F \u043D\u0456\u0436\u043A\u0430\u043C\u0438
-    \u0443 \u043F\u043E\u0437\u0456 \u043C\u0435\u0442\u0435\u043B\u0438\u043A\u0430"
+  Name: Butterfly
+  Description: The legs in the butterfly pose
   BodyPart: 10
-  WorkingParts: "\u0422\u0421\u0421"
+  WorkingParts: "\u041A\u0443\u043B\u044C\u0448\u043E\u0432\u0438\u0439 \u0441\u0443\u0433\u043B\u043E\u0431"
   Difficulty: 1
   MinAge: 0
-  MinReps: 30
-  MaxReps: 30
+  MinReps: 10
+  MaxReps: 10
   IsWarmUp: 1
-  Skills: 01000000
+  Skills: 02000000

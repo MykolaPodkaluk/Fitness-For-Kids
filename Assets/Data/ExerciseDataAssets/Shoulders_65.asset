@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1933c978fbd53964cbf66307d5111ca2, type: 3}
+  m_Name: Shoulders_65
+  m_EditorClassIdentifier: 
+  ID: Shoulders_65
+  Name: Shoulder rotation on one hand back
+  Description: Start straight, arms on the belt. The back is flat, the look directed
+    forward. Rotate, one hand swing, back. Put your hand on the belt. I also fulfill
+    each hand.
+  BodyPart: 2
+  WorkingParts: "\u041F\u043B\u0435\u0447\u043E\u0432\u0438\u0439 \u0441\u0443\u0433\u043B\u043E\u0431"
+  Difficulty: 1
+  MinAge: 4
+  MinReps: 10
+  MaxReps: 10
+  IsWarmUp: 1
+  Skills: 
