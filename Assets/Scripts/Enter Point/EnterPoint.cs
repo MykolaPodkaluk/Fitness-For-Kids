@@ -5,6 +5,7 @@ using FitnessForKids.Data;
 using FitnessForKids.UI;
 using UnityEngine;
 using Zenject;
+using Core.Service;
 
 namespace FitnessForKids.SceneManagement
 {
@@ -16,6 +17,7 @@ namespace FitnessForKids.SceneManagement
         private IAdsService _adsService;
         private ISubscriptionService _subscriptionService;
         private IDataService _dataService;
+        private IInputService _inputService;
 
         [SerializeField] private LoadingScreenView _loadingView;
         [SerializeField] private int tweenCyclesToUnload = 2;
@@ -48,6 +50,9 @@ namespace FitnessForKids.SceneManagement
             _adsService = _container.Resolve<IAdsService>();
             _adsService.Init();
             _accountService = _container.Resolve<IAccountService>();
+
+            _inputService = _container.Resolve<IInputService>();
+            _inputService.Init();
 
             _subscriptionService = _container.Resolve<ISubscriptionService>();
             _subscriptionService.Init();

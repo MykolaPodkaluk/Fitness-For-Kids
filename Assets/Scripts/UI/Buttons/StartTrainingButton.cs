@@ -13,6 +13,7 @@ namespace FitnessForKids.UI
         [SerializeField] private List<Sprite> _stateSprites;
         [SerializeField] private Vector3 _tweenScale = new Vector3(-0.05f, 0.05f, 1f);
         [SerializeField] private float _tweenDuration = 0.5f;
+        [SerializeField] private GameObject _blocker;
         [Inject] private ITrainingService _trainingService;
 
         private void OnEnable()
@@ -41,6 +42,7 @@ namespace FitnessForKids.UI
         {
             _button.image.sprite = _stateSprites[1];
             _button.interactable = false;
+            _blocker.SetActive(true);
             transform.DOPunchScale(_tweenScale, _tweenDuration, 10, 1).OnComplete(OnTweenComplete);
         }
 

@@ -27,11 +27,9 @@ namespace FitnessForKids.UI.Helpers
 
         private void OnButtonClick()
         {
-            Debug.Log(Time.time);
             _trainingProgramsMediator.CreatePopup(() =>
             {
                 _uiScreenController.SetActiveMainMenu(false);
-                Debug.Log(Time.time);
             });
         }
 

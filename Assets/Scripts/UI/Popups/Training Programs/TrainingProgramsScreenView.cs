@@ -53,8 +53,7 @@ namespace FitnessForKids.UI
         }
 
         public void AddTrainingProgramView(ProgramType type, bool isActive, int id, string title, string description, Sprite icon, Sprite iconBase, Sprite panelBase, Color color)
-        {
-            Debug.Log(Time.time);
+        { 
             var programView = Instantiate(_programViewPrefab, _programsContainer);
             programView.SetInputHandler(_inputHandler);
             programView.Init(type, isActive, id, title, description, icon, iconBase, panelBase, color);

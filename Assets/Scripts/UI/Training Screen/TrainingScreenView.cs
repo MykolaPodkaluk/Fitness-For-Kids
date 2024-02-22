@@ -28,6 +28,7 @@ namespace FitnessForKids.UI
         [SerializeField] private Button backwardButton;
         [SerializeField] private Button pauseButton;
         [SerializeField] private RadialTimerView _timerPanel;
+        [SerializeField] private GameObject _blocker;
         [Inject] private ITrainingController trainingController;
         [Inject] private ITrainingService trainingService;
         [Inject] private IDataService _dataService;
@@ -75,6 +76,7 @@ namespace FitnessForKids.UI
             panelCanvasGroup.DOFade(0, 0.5f).OnComplete(() => panelCanvasGroup.gameObject.SetActive(false));
             _timerPanel.CancelTimer();
             _timeScaleController.Reset();
+            _blocker.SetActive(false);
             if (_dataService != null)
             {
                 bodyPartsPreview.Init(_dataService.UserProfileController.CurrentGender, false);

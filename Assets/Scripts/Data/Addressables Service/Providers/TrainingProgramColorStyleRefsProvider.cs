@@ -3,6 +3,8 @@ using UnityEngine.AddressableAssets;
 using Cysharp.Threading.Tasks;
 using FitnessForKids.UI.Styles;
 using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace FitnessForKids.Data.Addressables
 {
@@ -36,6 +38,35 @@ namespace FitnessForKids.Data.Addressables
                     string.Format("Can't load ScriptableObject from addressable reference for >>{0}<<", color)
                     );
             }
+        }
+
+        public async UniTask<List<TSyle>> GetAllData<TSyle>() where TSyle : ITrainingProgramColorStyleData
+        {
+            List<RefPair> refPairs = new List<RefPair>();
+            foreach (ColorScheme item in Enum.GetValues(typeof(ColorScheme)))
+            {
+                if ((int)item != 0)
+                {
+                    refPairs.Add(GetReference(item));
+                }
+            }
+
+            List<TSyle> views = new List<TSyle>();
+            List<AsyncOperationHandle<TSyle>> handlers = new List<AsyncOperationHandle<TSyle>>();
+
+            foreach (var item in refPairs)
+            { 
+                AsyncOperationHandle<TSyle> handler = UnityEngine.AddressableAssets.Addressables.LoadAssetAsync<TSyle>(item.Reference.RuntimeKey);
+                await handler;
+                handlers.Add(handler);
+            }
+
+            foreach (var item in handlers)
+            {
+                views.Add(item.Result);
+            }
+
+            return views;
         }
 
         private RefPair GetReference(ColorScheme color)

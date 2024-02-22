@@ -1,6 +1,8 @@
 using Cysharp.Threading.Tasks;
 using FitnessForKids.Training;
+using FitnessForKids.UI.Styles;
 using System;
+using System.Collections.Generic;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
@@ -36,6 +38,35 @@ namespace FitnessForKids.Data.Addressables
                     string.Format("Can't load ScriptableObject from addressable reference for >>{0}<<", type)
                     );
             }
+        }
+
+        public async UniTask<List<TKeys>> GetAllData<TKeys>() where TKeys : ITrainingProgramLocalizationData
+        {
+            List<RefPair> refPairs = new List<RefPair>();
+            foreach (ProgramType item in Enum.GetValues(typeof(ProgramType)))
+            {
+                if ((int)item != 0)
+                {
+                    refPairs.Add(GetReference(item));
+                }
+            }
+
+            List<TKeys> views = new List<TKeys>();
+            List<AsyncOperationHandle<TKeys>> handlers = new List<AsyncOperationHandle<TKeys>>();
+
+            foreach (var item in refPairs)
+            {
+                AsyncOperationHandle<TKeys> handler = UnityEngine.AddressableAssets.Addressables.LoadAssetAsync<TKeys>(item.Reference.RuntimeKey);
+                await handler;
+                handlers.Add(handler);
+            }
+
+            foreach (var item in handlers)
+            {
+                views.Add(item.Result);
+            }
+
+            return views;
         }
 
         private RefPair GetReference(ProgramType type)

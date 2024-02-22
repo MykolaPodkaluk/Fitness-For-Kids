@@ -107,7 +107,7 @@ namespace FitnessForKids.UI
         }
 
         protected override async UniTask<TrainingProgramsScreenModel> BuildModel()
-        {
+        { 
             var model = new TrainingProgramsScreenModel();
             var programs = _refsHolder.TrainingPrograms;
             var trainingProgramsCount = programs.Length;
@@ -121,13 +121,19 @@ namespace FitnessForKids.UI
             model.ProgramTitles = new string[trainingProgramsCount];
             model.ProgramDescriptions = new string[trainingProgramsCount];
             model.ProgramFullDescriptions = new string[trainingProgramsCount];
+            Debug.Log(Time.time);
 
-            async UniTask CreateProgram(int i)
+            var viewStyles = await _refsHolder.Trainings.Views.GetAllData<TrainingProgramPanelViewStyleData>();
+            var colorStyles = await _refsHolder.Trainings.Styles.GetAllData<TrainingProgramColorStyleData>();
+            var localizations = await _refsHolder.Trainings.LocalizationKeys.GetAllData<TrainingProgramLocalizationData>();
+            Debug.Log(Time.time);
+
+            for (int i = 0, j = trainingProgramsCount; i < j; i++)
             {
                 var type = programs[i].Type;
-                var viewStyle = await _refsHolder.Trainings.Views.GetData<TrainingProgramPanelViewStyleData>(type);
-                var colorStyle = await _refsHolder.Trainings.Styles.GetData<TrainingProgramColorStyleData>(viewStyle.ColorScheme);
-                var localization = await _refsHolder.Trainings.LocalizationKeys.GetData<TrainingProgramLocalizationData>(type);
+                var viewStyle = viewStyles[(int)type - 1];
+                var colorStyle = colorStyles[(int)viewStyle.ColorScheme - 1];
+                var localization = localizations[(int)type - 1];
 
                 model.ProgramIcons[i] = viewStyle.IconSprite;
                 model.ProgramIconBases[i] = colorStyle.IconBackgroundSprite;
@@ -138,17 +144,13 @@ namespace FitnessForKids.UI
                 model.ProgramDescriptions[i] = LocalizationController.GetLocalizedString(model.TableKey, localization.Description);
                 model.ProgramFullDescriptions[i] = LocalizationController.GetLocalizedString(model.TableKey, localization.FullDescription);
             }
-            for (int i = 0, j = trainingProgramsCount; i < j; i++)
-            {
-                await CreateProgram(i);
-            }
+
             return await UniTask.FromResult(model);
         }
 
         protected override UniTask DoOnInit(ITrainingProgramsScreenView view)
         {
-            view.SetInputHandler(this);
-            Debug.Log(Time.time);
+            view.SetInputHandler(this); 
 
             var trainingPrograms = _model.TrainingPrograms;
             var trainingProgramsCount = trainingPrograms.Length;

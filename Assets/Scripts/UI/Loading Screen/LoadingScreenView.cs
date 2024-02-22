@@ -2,8 +2,7 @@ using FitnessForKids.UI.Animation;
 using UnityEngine;
 using DG.Tweening;
 using System;
-using TMPro; 
-using UnityEngine.InputSystem;
+using TMPro;  
 using UnityEngine.Localization.Settings;
 
 namespace FitnessForKids.UI
