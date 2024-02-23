@@ -8,6 +8,7 @@ using System.Linq;
 using UnityEngine;
 using Zenject;
 using System;
+using Cysharp.Threading.Tasks;
 
 namespace FitnessForKids.UI
 {
@@ -35,10 +36,12 @@ namespace FitnessForKids.UI
             Subscribe();
         }
 
-        private void OnEnable()
+        private async void OnEnable()
         {
             if (_dataService.UserProfileController.HasActiveProfile)
             {
+                UpdateProgramButtons();
+                await UniTask.Delay(100);
                 UpdateProgramButtons();
             }
         }
@@ -91,7 +94,7 @@ namespace FitnessForKids.UI
             return settings;
         }
 
-        private void UpdateProgramButtons()
+        public void UpdateProgramButtons()
         {
             foreach (var button in _programButtons)
             {

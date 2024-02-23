@@ -120,13 +120,11 @@ namespace FitnessForKids.UI
             model.ProgramColors = new Color[trainingProgramsCount];
             model.ProgramTitles = new string[trainingProgramsCount];
             model.ProgramDescriptions = new string[trainingProgramsCount];
-            model.ProgramFullDescriptions = new string[trainingProgramsCount];
-            Debug.Log(Time.time);
+            model.ProgramFullDescriptions = new string[trainingProgramsCount]; 
 
             var viewStyles = await _refsHolder.Trainings.Views.GetAllData<TrainingProgramPanelViewStyleData>();
             var colorStyles = await _refsHolder.Trainings.Styles.GetAllData<TrainingProgramColorStyleData>();
-            var localizations = await _refsHolder.Trainings.LocalizationKeys.GetAllData<TrainingProgramLocalizationData>();
-            Debug.Log(Time.time);
+            var localizations = await _refsHolder.Trainings.LocalizationKeys.GetAllData<TrainingProgramLocalizationData>(); 
 
             for (int i = 0, j = trainingProgramsCount; i < j; i++)
             {
