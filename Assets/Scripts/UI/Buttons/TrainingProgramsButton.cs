@@ -8,6 +8,7 @@ namespace FitnessForKids.UI.Helpers
     public class TrainingProgramsButton : MonoBehaviour
     {
         [SerializeField] private Button _button;
+        [SerializeField] private TrainingProgramsPanel _trainingProgramsPanel;
         [Inject] private ITrainingProgramsMediator _trainingProgramsMediator;
         [Inject] private IUIScreenController _uiScreenController;
 
@@ -28,8 +29,9 @@ namespace FitnessForKids.UI.Helpers
         private void OnButtonClick()
         {
             _trainingProgramsMediator.CreatePopup(() =>
-            {
+            { 
                 _uiScreenController.SetActiveMainMenu(false);
+                _trainingProgramsPanel.UpdateProgramButtons();
             });
         }
 
