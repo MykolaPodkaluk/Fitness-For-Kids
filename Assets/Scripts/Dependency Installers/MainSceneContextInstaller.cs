@@ -1,3 +1,4 @@
+using Core.Service;
 using FitnessForKids.Services;
 using FitnessForKids.Training;
 using FitnessForKids.UI;

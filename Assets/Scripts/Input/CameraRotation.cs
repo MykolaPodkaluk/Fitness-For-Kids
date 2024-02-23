@@ -21,8 +21,7 @@ public class CameraRotation : MonoBehaviour
 
     private int _zoomCounter;
     private int _YCounter;
-    
-    private TouchControls _touchControls;
+     
     private Coroutine _zoomCoroutine; 
     private Vector3 previousPosition; 
     private Vector3 previousPositionTwoTouches;

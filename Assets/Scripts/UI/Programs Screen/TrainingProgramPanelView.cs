@@ -47,8 +47,7 @@ namespace FitnessForKids.UI
             descriptionLabel.fontSize = 30;
             iconImage.sprite = icon;
             iconBaseImage.sprite = iconBase;
-            panelBaseImage.sprite = panelBase;
-            Debug.Log(Time.time);
+            panelBaseImage.sprite = panelBase; 
         }
 
         public void Show(Action onShow)

@@ -3,6 +3,7 @@ using UnityEngine.AddressableAssets;
 using Cysharp.Threading.Tasks;
 using FitnessForKids.UI.Styles;
 using System;
+using System.Collections.Generic;
 
 namespace FitnessForKids.Data.Addressables
 {
@@ -32,6 +33,35 @@ namespace FitnessForKids.Data.Addressables
                     string.Format("Can't load ScriptableObject from addressable reference for >>{0}<<", type)
                     );
             }
+        }
+
+        public async UniTask<List<TView>> GetAllData<TView>() where TView : ITrainingProgramViewStyleData
+        {
+            List<RefPair> refPairs = new List<RefPair>();
+            foreach (ProgramType item in Enum.GetValues(typeof(ProgramType)))
+            {
+                if ((int)item != 0)
+                {
+                    refPairs.Add(GetReference(item));
+                }
+            } 
+             
+            List<TView> views = new List<TView>(); 
+            List<AsyncOperationHandle<TView>> handlers = new List<AsyncOperationHandle<TView>>();
+
+            foreach (var item in refPairs)
+            { 
+                AsyncOperationHandle<TView> handler = UnityEngine.AddressableAssets.Addressables.LoadAssetAsync<TView>(item.Reference.RuntimeKey);
+                await handler;
+                handlers.Add(handler);
+            }
+
+            foreach (var item in handlers)
+            {
+                views.Add(item.Result);
+            }
+
+            return views; 
         }
 
         private RefPair GetReference(ProgramType type)

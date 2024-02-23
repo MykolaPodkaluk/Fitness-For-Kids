@@ -5,6 +5,7 @@ using FitnessForKids.Services;
 using FitnessForKids.UI;
 using UnityEngine;
 using Zenject;
+using Core.Service;
 
 /// <summary>
 /// Installs all dependency bindings using Zenject framework
@@ -33,6 +34,7 @@ public class ProjectContextInstaller : MonoInstaller
         Container.Bind<IAccountService>().To<AccountService>().AsSingle();
         Container.Bind<IAdsService>().To<AdsService>().AsSingle();
         Container.Bind<IDataService>().To<DataService>().AsSingle().NonLazy();
+        Container.Bind<IInputService>().To<InputService>().AsSingle().NonLazy();
     }
 
     private void BindAdsProvider()
