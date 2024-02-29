@@ -61,8 +61,6 @@ namespace FitnessForKids.Services
         private const string kGoogleNoAdsProductId = "fivesysdev_sport_noads";
         private const string kGoogleSubscriptionYearProductId = "fivesysdev_kidsfitness_subscription_year";
         private const string kGoogleSubscriptionSeasonProductId = "fivesysdev_sport_subscription_season";
-        private const string kAppleSubscriptionYearProductId = "five.systems.development.sport.year.sub";
-        private const string kAppleSubscriptionSeasonProductId = "five.systems.development.sport.season.sub";
 
         private IStoreController _storeController;
         private IExtensionProvider _storeExtensionProvider;
@@ -105,8 +103,8 @@ namespace FitnessForKids.Services
 
             var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
 #if UNITY_IOS
-            builder.AddProduct(kAppleSubscriptionYearProductId, ProductType.Subscription);
-            builder.AddProduct(kAppleSubscriptionSeasonProductId, ProductType.Subscription);
+            builder.AddProduct(kGoogleSubscriptionYearProductId, ProductType.Subscription);
+            builder.AddProduct(kGoogleSubscriptionSeasonProductId, ProductType.Subscription);
 #else
             builder.AddProduct(kGoogleNoAdsProductId, ProductType.NonConsumable);
             builder.AddProduct(kGoogleSubscriptionYearProductId, ProductType.Subscription);
@@ -287,12 +285,6 @@ namespace FitnessForKids.Services
         {
             switch (id)
             {
-                case kAppleSubscriptionYearProductId:
-                    _products.Add(PurchaseProductType.SubscriptionYear, product);
-                    break;
-                case kAppleSubscriptionSeasonProductId:
-                    _products.Add(PurchaseProductType.SubscriptionSeason, product);
-                    break;
 
                 case kGoogleSubscriptionYearProductId:
                     _products.Add(PurchaseProductType.SubscriptionYear, product);
