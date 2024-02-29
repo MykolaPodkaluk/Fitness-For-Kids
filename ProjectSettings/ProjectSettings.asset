@@ -135,12 +135,8 @@ PlayerSettings:
   vulkanEnablePreTransform: 1
   vulkanEnableLateAcquireNextImage: 0 
   vulkanEnableCommandBufferRecycling: 1
-  loadStoreDebugModeEnabled: 0
-<<<<<<< HEAD
-  bundleVersion: 0.1.9 
-=======
-  bundleVersion: 0.1.9
->>>>>>> parent of 1426c28 (delete admob)
+  loadStoreDebugModeEnabled: 0 
+  bundleVersion: 1.0.0.0 
   preloadedAssets:
   - {fileID: 11400000, guid: 494b18472d09f6b40b5110d58485e72b, type: 2}
   metroInputSource: 0
