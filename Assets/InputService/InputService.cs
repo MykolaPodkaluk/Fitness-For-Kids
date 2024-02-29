@@ -91,11 +91,21 @@ namespace Core.Service
         public void OnUpdate()
         {
             CheckIsTimeUp();
+
+            if (Time.timeScale == 0f)
+            {
+                _blocker.SetActive(false);
+                _canClick = true;
+            }
         }
 
 
         private bool CheckIsTimeUp()
         {
+            if (Time.timeScale == 0f )
+            {
+                return true;
+            }
             float currentValue = _time.Value;
             if (currentValue == 0)
             {

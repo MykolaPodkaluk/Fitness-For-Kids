@@ -1,15 +1,12 @@
-using System.Collections.Generic;
-using System.Collections;
+using System.Collections.Generic; 
 using System.Linq;
 using UnityEngine;
 using System;
 using Zenject;
 using FitnessForKids.UI;
 using FitnessForKids.Data.Addressables;
-using Cysharp.Threading.Tasks;
-using FitnessForKids.Data;
-using FitnessForKids.Services;
-using FitnessForKids.UI.Subscription;
+using Cysharp.Threading.Tasks; 
+using FitnessForKids.Services; 
 using System.Threading;
 
 public interface IAnimationController
@@ -44,6 +41,7 @@ public class AnimationController : MonoBehaviour, IAnimationController
 
     private void Start()
     {
+        _exercisePreviewMediator.ON_CLOSE += (() => animationEvent.ExerciseStart());
     }
 
     private async UniTaskVoid SetupPreview()
@@ -67,7 +65,6 @@ public class AnimationController : MonoBehaviour, IAnimationController
         playfirstPrewiew = UniTask.Action(SetupPreview);
         var currentExerciseId = _exerciseIds[_currentAnimationIndex];
         _exercisePreviewMediator.ON_CLOSE += playfirstPrewiew;
-        _exercisePreviewMediator.ON_CLOSE += (() => animationEvent.ExerciseStart());
         _exercisePreviewMediator.CreatePopup(currentExerciseId);
     } 
 
@@ -119,14 +116,19 @@ public class AnimationController : MonoBehaviour, IAnimationController
 
     private async UniTask HandleAnimation()
     {
+        var animationIndex = animationComplex[_currentAnimationIndex];
+        var animationCount = animationsRepetitionCount[_currentAnimationIndex];
+        var currentTrainingDuration = currentTrainingDurations[_currentAnimationIndex * animationCount];
         animationDelay = new CancellationTokenSource();
         _animator.enabled = true;
-        var state = Animator.StringToHash(animationComplex[_currentAnimationIndex]);
+        var state = Animator.StringToHash(animationIndex);
+        Debug.Log("animationIndex = " + animationIndex.ToString() + "\nanimationCount = " + animationCount.ToString() + "\ncurrentTrainingDuration = " + currentTrainingDuration.ToString());
+        Debug.Log("_currentAnimationIndex = " + _currentAnimationIndex.ToString());
 
-        for (int i = 0; i < animationsRepetitionCount[_currentAnimationIndex]; i++)
+        for (int i = 0; i < animationCount; i++)
         {
-            _animator.Play(state, 0);
-            await UniTask.Delay(TimeSpan.FromSeconds(currentTrainingDurations[_currentAnimationIndex * animationsRepetitionCount[_currentAnimationIndex]]), cancellationToken: animationDelay.Token);
+            _animator.Play(state, 0); 
+            await UniTask.Delay(TimeSpan.FromSeconds(currentTrainingDuration), cancellationToken: animationDelay.Token);
         }
 
         _currentAnimationIndex++;
@@ -142,6 +144,7 @@ public class AnimationController : MonoBehaviour, IAnimationController
         animationComplex = new List<string>();
         _animator.Rebind();
         _animator.enabled = false;
+        _exercisePreviewMediator.ON_CLOSE -= playNextAnimation;
         await SetActive(false); 
     }
 }

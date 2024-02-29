@@ -61,7 +61,7 @@ namespace FitnessForKids.Services
         }
 
         private async UniTask Subscribe()
-        {
+        { 
             await UniTask.Delay(200);
             _animator.AnimationEvent.OnExerciseCompleted += UpdateNextExerciseView;
             _animator.AnimationEvent.OnProgramCompleted += CompleteTraining;
@@ -91,15 +91,15 @@ namespace FitnessForKids.Services
         public async UniTask StartTraining(ITrainingParameters trainingParameters)
         {
             SetScreenActive(true);
-            await _animator.SetActive(true);
+            await _animator.SetActive(true); 
+            Unubscribe();
             await Subscribe();
             await StartTrainingProgram(trainingParameters);
         }
 
         private async UniTask StartTrainingProgram(ITrainingParameters trainingParameters)
         {
-            currentProgram = new TrainingProgram(trainingParameters.Type, GetExercisesForProgram(trainingParameters));
-
+            currentProgram = new TrainingProgram(trainingParameters.Type, GetExercisesForProgram(trainingParameters)); 
             currentExerciseIndex = 0;
             currentExerciseID = 0;
             var currentExercises = currentProgram.Exercises;
@@ -142,6 +142,7 @@ namespace FitnessForKids.Services
         private void UpdateTimer()
         {
             _trainingScreenView.UpdateTimer(_currentTrainingDurations[currentExerciseID]);
+            Debug.Log(currentExerciseID);
             currentExerciseID++;
         }
 
@@ -171,6 +172,10 @@ namespace FitnessForKids.Services
                 var animation = animations[i];
                 var duration = animation.length * reps[i];
                 _currentTrainingDurations.Add(duration);
+            }
+            foreach (var item in reps)
+            {
+                Debug.Log(item);
             }
         }
 
